@@ -1,0 +1,22 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Latitude</th>
+                <th scope="col">Longitude</th>
+                <th scope="col">Ver no Google Maps</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let registro of registros">
+                <td>{{registro.lat}}</td>
+                <td>{{registro.lng}}</td>
+                <td class="alinhar-botao">
+                    <button type="button" class="btn btn-primary" (click)="abrirItinerarioMaps(registro)">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

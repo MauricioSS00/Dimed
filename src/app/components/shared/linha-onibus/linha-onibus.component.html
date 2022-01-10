@@ -1,0 +1,26 @@
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Código</th>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Itinerário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let registro of registros">
+                <td>{{registro.codigo}}</td>
+                <td>{{registro.id}}</td>
+                <td>{{registro.nome}}</td>
+                <td>{{registro.tipo}}</td>
+                <td class="alinhar-botao">
+                    <button type="button" class="btn btn-primary" (click)="buscarItinerario(registro.id)">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,20 @@
+.loading-container {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+    .centralizar {
+        position: absolute;
+        padding-left: 50%;
+        padding-top: 50vh;
+        .spinner {
+            z-index: 6;
+            width: 6rem;
+            height: 6rem;
+        }
+    }
+}
